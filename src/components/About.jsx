@@ -2,7 +2,7 @@ import React from 'react';
 import { motion, useInView } from 'framer-motion';
 import { FaCode, FaTools } from 'react-icons/fa';
 import profilePhoto from '../assets/profile.jpg'; // Import your profile photo
-
+import data from "../assets/data.json"
 const About = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -70,15 +70,15 @@ const About = () => {
             <ul className="space-y-3 text-gray-600">
               <li className="flex items-center">
                 <FaCode className="text-gray-800 text-lg mr-2" />
-                Full-Stack Web Development
+                Web Development
               </li>
               <li className="flex items-center">
                 <FaTools className="text-gray-800 text-lg mr-2" />
-                Responsive Web Design
+                UX/UI design
               </li>
               <li className="flex items-center">
                 <FaCode className="text-gray-800 text-lg mr-2" />
-                RESTful API Development
+                Software developer
               </li>
               <li className="flex items-center">
                 <FaTools className="text-gray-800 text-lg mr-2" />
@@ -102,22 +102,15 @@ const About = () => {
             Technical Skills
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
-            {[
-              'C++', 'HTML', 'CSS', 'Tailwind CSS', 'JavaScript', 'SQL',
-              'Postman', 'Git', 'GitHub', 'Docker', 'React.js', 'Node.js',
-              'Express.js', 'MongoDB', 'React Native', 'Pega', 'Bootstrap'
-            ].map((skill, index) => (
+            {
+            data.skills.map((skill, index) => (
               <motion.div 
                 key={index} 
                 className="flex flex-col items-center p-4 rounded-xl bg-white shadow-md border border-gray-200 transform hover:scale-105 transition duration-300"
                 variants={itemVariants}
               >
-                {index % 2 === 0 ? (
-                  <FaCode className="text-gray-800 text-3xl mb-2" />
-                ) : (
-                  <FaTools className="text-gray-800 text-3xl mb-2" />
-                )}
-                <span className="text-md font-medium text-gray-600">{skill}</span>
+                <img src={skill.image} alt="" className='w-12'/>
+                <span className="text-md font-medium text-gray-600">{skill.name}</span>
               </motion.div>
             ))}
           </div>

@@ -1,28 +1,33 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import img from '../assets/projects/project-1.jpg'
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+
 
 const projects = [
   {
-    title: 'Project One',
-    description: 'A brief description of Project One. This project demonstrates skills in React, Node.js, and MongoDB.',
-    imageUrl: img, // Replace with actual image path
-    projectLink: 'https://github.com/Ankushsehgal909/project-one',
-    technologies: ['React.js', 'Node.js', 'MongoDB'],
-  },
-  {
-    title: 'Project Two',
-    description: 'A brief description of Project Two. This project showcases expertise in full-stack development using the MERN stack.',
-    imageUrl: img , // Replace with actual image path
-    projectLink: 'https://github.com/Ankushsehgal909/project-two',
+    title: 'StudyNotion',
+    image:img,
+    description: 'An EdTech platform that helps students access quality education resources and courses.',
     technologies: ['React.js', 'Node.js', 'MongoDB', 'Express.js'],
+    githubLink: 'https://github.com/Ankushsehgal909/StudyNotion',
+    liveLink: 'https://studynotion.com', // Add your live link here
   },
   {
-    title: 'Project Three',
-    description: 'A brief description of Project Three. This is a mobile app developed with React Native and Node.js.',
-    imageUrl: img , // Replace with actual image path
-    projectLink: 'https://github.com/Ankushsehgal909/project-three',
-    technologies: ['React Native', 'Node.js', 'Express.js'],
+    title: 'E-Commerce Website',
+    imageUrl:img,
+    description: 'A full-featured e-commerce website with payment integration and a dynamic product catalog.',
+    technologies: ['React.js', 'Node.js', 'MongoDB', 'Stripe'],
+    githubLink: 'https://github.com/Ankushsehgal909/E-Commerce-Website',
+    projectLink: 'https://ecommercewebsite.com', // Add your live link here
+  },
+  {
+    title: 'MQTT Server',
+    image:img,
+    description: 'A lightweight messaging protocol server for small sensors and mobile devices, optimized for high latency and unreliable networks.',
+    technologies: ['Node.js', 'MQTT', 'Docker'],
+    githubLink: 'https://github.com/Ankushsehgal909/MQTT-Server',
+    liveLink: 'https://mqttserver.com', // Add your live link here
   },
 ];
 
@@ -43,7 +48,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              className="relative group rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 border border-gray-200"
+              className="relative group rounded-lg overflow-hidden h-60 transform hover:scale-105 transition duration-300 border border-gray-200"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
@@ -65,14 +70,24 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                <a
-                  href={project.projectLink}
-                  target="_blank"
+                <div className="flex flex-wrap gap-4">
+                <a 
+                  href={project.githubLink} 
+                  target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-block px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-gray-800 to-gray-600 rounded hover:bg-opacity-90"
+                  className="flex items-center text-lg text-blue-400 hover:underline"
                 >
-                  View Project
+                  <FaGithub className="mr-2" /> View on GitHub
                 </a>
+                <a 
+                  href={project.liveLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center text-lg text-red-400 hover:underline"
+                >
+                  <FaExternalLinkAlt className="mr-2" /> Visit Online
+                </a>
+              </div>
               </div>
             </motion.div>
           ))}
