@@ -2,18 +2,66 @@
 {
     "skills":[
         {"name":"C++","image":"/logo/c++.png"},
-        {"name":"Java","image":"/logo/js.png"},
+        {"name":"Java","image":"/logo/java.png"},
         {"name":"JavaScript","image":"/logo/js.png"},
         {"name":"HTML","image":"/logo/html.png"},
         {"name":"Css","image":"/logo/css.png"},
+        {"name":"Bootstrap","image":"/logo/bootstrap.png"},
         {"name":"React JS","image":"/logo/react.png"},
+        {"name":"Tailwind Css","image":"/logo/tailwind.png"},
+        {"name":"React Native","image":"/logo/react.png"},
         {"name":"Node JS","image":"/logo/node.png"},
         {"name":"Express JS","image":"/logo/ex.png"},
-        {"name":"MongoDB","image":"/logo/js.png"},
-        {"name":"SQL","image":"/logo/js.png"},
+        {"name":"MongoDB","image":"/logo/mongodb.png"},
+        {"name":"SQL","image":"/logo/sql.png"},
+        {"name":"Postman","image":"/logo/postman.png"},
         {"name":"Docker","image":"/logo/docker.png"},
-        {"name":"Tailwind Css","image":"/logo/tailwind.css"},
-        {"name":"React Native","image":"/logo/react.png"},
-        {"name":"Bootstrap","image":"/logo/js.png"}
-    ]
+        {"name":"Github","image":"/logo/github.png"},
+        {"name":"Git","image":"/logo/git.png"}
+    ],
+    "projects": [
+          {
+            "title": "StudyNotion",
+            "imageUrl": "./src/assets/projects/study.jpg",
+            "description": "An EdTech platform that helps students access quality education resources and courses.",
+            "technologies": ["React.js", "Node.js", "MongoDB", "Express.js"],
+            "githubLink": "https://github.com/Ankushsehgal909/Study-hub",
+            "liveLink": "https://studynotion-9.netlify.app/"
+          },
+          {
+            "title": "TextWizard",
+            "imageUrl": "./src/assets/projects/textwizard.png",
+            "description": "A powerful online tool for manipulating text in a variety of ways.",
+            "technologies": ["React.js", "Bootstrap"],
+            "githubLink": "https://github.com/Ankushsehgal909/React-App_TextWizard_Source_Code",
+            "liveLink": "https://ankushsehgal909.github.io/TextWizard/"
+          },
+          {
+            "title": "MQTT Server",
+            "imageUrl": "./src/assets/projects/",
+            "description": "A lightweight messaging protocol server for small sensors and mobile devices, optimized for high latency and unreliable networks.",
+            "technologies": ["React", "Node.js", "MQTT"],
+            "githubLink": "https://github.com/Ankushsehgal909/MQTT-Server",
+            "liveLink": "https://asg-dashboard.netlify.app/"
+          },
+          {
+            "title": "Dashboard",
+            "imageUrl": "./src/assets/projects/dashboard.png",
+            "description": "Interactive charts, user management, and customizable widgets, enabling users to monitor key metrics and make informed decisions efficiently.",
+            "technologies": ["React", "Tailwind CSS"],
+            "githubLink": "https://github.com/Ankushsehgal909/Dashboard",
+            "liveLink": "https://asg-dashboard.netlify.app/"
+          },
+          {
+            "title": "Headline Hub",
+            "imageUrl": "./src/assets/projects/Headline hub.png",
+            "description": "A daily update news app.",
+            "technologies": ["React", "Bootstarp","News API"],
+            "githubLink": "https://github.com/Ankushsehgal909/React-App_Headline_Hub",
+            "liveLink": "https://github.com/Ankushsehgal909/React-App_Headline_Hub"
+          }
+        ]
+      
+      
+    
 }
