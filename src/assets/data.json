@@ -22,7 +22,7 @@
     "projects": [
           {
             "title": "StudyNotion",
-            "imageUrl": "./src/assets/projects/study.jpg",
+            "imageUrl": "/projects/study.jpg",
             "description": "An EdTech platform that helps students access quality education resources and courses.",
             "technologies": ["React.js", "Node.js", "MongoDB", "Express.js"],
             "githubLink": "https://github.com/Ankushsehgal909/Study-hub",
@@ -30,7 +30,7 @@
           },
           {
             "title": "TextWizard",
-            "imageUrl": "./src/assets/projects/textwizard.png",
+            "imageUrl": "/projects/textwizard.png",
             "description": "A powerful online tool for manipulating text in a variety of ways.",
             "technologies": ["React.js", "Bootstrap"],
             "githubLink": "https://github.com/Ankushsehgal909/React-App_TextWizard_Source_Code",
@@ -38,7 +38,7 @@
           },
           {
             "title": "MQTT Server",
-            "imageUrl": "./src/assets/projects/",
+            "imageUrl": "/projects/",
             "description": "A lightweight messaging protocol server for small sensors and mobile devices, optimized for high latency and unreliable networks.",
             "technologies": ["React", "Node.js", "MQTT"],
             "githubLink": "https://github.com/Ankushsehgal909/MQTT-Server",
@@ -46,7 +46,7 @@
           },
           {
             "title": "Dashboard",
-            "imageUrl": "./src/assets/projects/dashboard.png",
+            "imageUrl": "/projects/dashboard.png",
             "description": "Interactive charts, user management, and customizable widgets, enabling users to monitor key metrics and make informed decisions efficiently.",
             "technologies": ["React", "Tailwind CSS"],
             "githubLink": "https://github.com/Ankushsehgal909/Dashboard",
@@ -54,7 +54,7 @@
           },
           {
             "title": "Headline Hub",
-            "imageUrl": "./src/assets/projects/Headline hub.png",
+            "imageUrl": "/projects/Headline hub.png",
             "description": "A daily update news app.",
             "technologies": ["React", "Bootstarp","News API"],
             "githubLink": "https://github.com/Ankushsehgal909/React-App_Headline_Hub",
