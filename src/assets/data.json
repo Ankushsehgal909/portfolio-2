@@ -37,12 +37,12 @@
             "liveLink": "https://ankushsehgal909.github.io/TextWizard/"
           },
           {
-            "title": "MQTT Server",
+            "title": "Sardar",
             "imageUrl": "/projects/",
             "description": "A lightweight messaging protocol server for small sensors and mobile devices, optimized for high latency and unreliable networks.",
             "technologies": ["React", "Node.js", "MQTT"],
             "githubLink": "https://github.com/Ankushsehgal909/MQTT-Server",
-            "liveLink": "https://asg-dashboard.netlify.app/"
+            "liveLink": "https://sardar9.netlify.app/"
           },
           {
             "title": "Dashboard",
