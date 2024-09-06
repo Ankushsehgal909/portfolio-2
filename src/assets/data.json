@@ -38,7 +38,7 @@
           },
           {
             "title": "Sardar",
-            "imageUrl": "/projects/",
+            "imageUrl": "/projects/Sardar.png",
             "description": "A lightweight messaging protocol server for small sensors and mobile devices, optimized for high latency and unreliable networks.",
             "technologies": ["React", "Node.js", "MQTT"],
             "githubLink": "https://github.com/Ankushsehgal909/MQTT-Server",
